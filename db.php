@@ -2,14 +2,10 @@
 $host = "localhost";
 $userName = "root";
 $password = "";
-$dbName = "imageform";
+$dbName = "test_db";
 
-$conn=mysqli_connect($host,$userName,$password,$dbName);
-// mysqli_select_db($conn,$dbName);
-// Check connection
+$conn=mysqli_connect($host, $userName, $password, $dbName);
 if ($conn->connect_error){
 	die("Connection failed: ". $conn->connect_error);
 }
-
-// echo"Connection Successful.";
 ?>
